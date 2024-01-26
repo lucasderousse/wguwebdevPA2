@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>State of Missouri</title>
+    <script src="emailValidation.js" defer></script>
+  </head>
+  <header>
+    <h1>Missouri, USA</h1>
+      <nav>
+        <ul>
+          <li><a href="missouri.html">Home</a></li>
+          <li><a href="jeffersonCity.html">State Capital</a></li>
+          <li><a href="wentzville.html">Wentzville</a></li>
+          <li><a href="stLouis.html">St. Louis</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <body>
+    <img src="missouriPic.png" alt="the state of Missouri as it would appear on a map" id="statePic">
+    <section>
+      <h2 class="facts">Welcome to Missouri</h2>
+      <p>The state of Missouri, which was admitted to the Union on August 10, 1821, is home to many cities and walks of life. The state currently has a population of 6,160,281 as of the 2020 census. Its average income rate stands at $30,662, and a median household income of $57,290.</p>
+
+      <table>
+        <tr>
+          <th>City Name</th>
+          <th>Population</th>
+          <th>Average Income</th>
+          <th>Founded in</th>
+        </tr>
+        <tr>
+          <td>Jefferson City</td>
+          <td>43,228</td>
+          <td>$31,781</td>
+          <td>1821</td>
+        </tr>
+        <tr>
+          <td>St. Louis</td>
+          <td>301,578</td>
+          <td>$29,892</td>
+          <td>1764</td>
+        </tr>
+        <tr>
+          <td>Wentzville</td>
+          <td>44,372</td>
+          <td>$45,274</td>
+          <td>1855</td>
+        </tr>
+      </table>
+    <aside>
+      <h3 class="facts">Did you know?</h3>
+      <p>Missouri has it's own dialect of french, Missouri french (or Paw Paw French) is a variant of French spoken in the upper Mississippi region. At one point, 8 counties within what is Missouri now spoke this language. It is mostly lost now, rarely able to find a Native speaker, or even a fluent one. Wanna read more? Check out this <a href="https://en.wikipedia.org/wiki/Missouri_French" target="_blank" rel="noopener noreferrer">Wikipedia Article</a>.</p>
+    </aside>
+    </section>
+
+    <h4>Want to join our newsletter?</h4>
+    <form method="post" id="newsletter" onSubmit="compareEmails(this);">
+      First name: <input type="text" name="firstName" placeholder="Lucas" required><br>
+      Last name: <input type="text" name="lastName" placeholder="DeRousse" required><br>
+      Email: <input type="email" name="email" id="email" placeholder="email@gmail.com" required><br>
+      Please Verify your Email: <input type="email" name="verify" id="verify" placeholder="gmail@email.com"required><br>
+      Want to leave a comment for the State Government Office?: <br><textarea name="comment" rows="3" cols="60" placeholder="I love Missouri!"></textarea><br><br>
+      <input type="submit" name="submit" value="Submit">
+    </script>
+    </form>
+  </body>
+
+</html>
